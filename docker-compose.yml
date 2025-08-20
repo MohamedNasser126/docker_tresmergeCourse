@@ -2,6 +2,7 @@
 services:
 
   node-app:
+    image: mnasser126/docker_tresmerge
     container_name: express-node-app
     build: .
     ports:
