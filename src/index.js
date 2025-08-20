@@ -42,7 +42,7 @@ client
 ///////////////////////////////////////////////////////
 app.get("/", (req, res) => {
   redisClient.set("products", "konafa manga ");
-  res.send("konafa manga ho hohoh ");
+  res.send("konafa manga ho hohoh from aws ");
 });
 
 app.get("/7alaweyat", async (req, res) => {
