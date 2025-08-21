@@ -1,5 +1,5 @@
 const { Client } = require("pg");
-
+const os = require("os");
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
@@ -42,7 +42,10 @@ client
 ///////////////////////////////////////////////////////
 app.get("/", (req, res) => {
   redisClient.set("products", "konafa manga ");
-  res.send("konafa manga ho hohoh from aws, and docker hub ");
+  console.log("traffic from ", os.hostname());
+  res.send(
+    "konafa manga ho hohoh from aws, and docker hub , i fucking hate programing ,with watch tower "
+  );
 });
 
 app.get("/7alaweyat", async (req, res) => {
